@@ -7,18 +7,30 @@ body {
 }
 
 header {
-  background-color: #0077cc;
-  color: white;
-  padding: 20px 40px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.logo {
-  height: 40px;
-}
-
+      background-color: #08386c;
+      color: white;
+      text-align: center;
+      padding: 10px 0;
+    }
+    .brand {
+      display: inline-block;
+      margin-right: 10px;
+    }
+    .brand img {
+      vertical-align: middle;
+      width: 36px; 
+      height: auto;
+    }
+    .brand span {
+      font-size: 24px;
+      font-weight: bold;
+      vertical-align: middle;
+    }
+    header h1 {
+      font-size: 30px;
+      margin: 5px 0;
+      font-weight: normal;
+    }
 nav a {
   color: white;
   margin-left: 20px;
@@ -90,3 +102,5 @@ nav a {
 .hidden {
   display: none;
 }
+
+
