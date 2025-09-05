@@ -2,11 +2,11 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background: #f4f6f9;
+  background: #ffffff;
   color: #333;
 }
 header {
-  background: #007bff;
+  background: #08386c;
   color: white;
   text-align: center;
   padding: 15px;
@@ -30,24 +30,35 @@ header {
   background: #0056b3;
 }
 .hidden { display: none; }
-.grid {
+.grid-box {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-  gap: 10px;
-  margin: 15px;
+  grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+  gap: 20px;
+  padding: 10px;
+  justify-items: center;
 }
-.grid button {
-  background: #fff;
-  padding: 15px;
-  border: 1px solid #ddd;
+
+.grid-box button {
+  width: 140px;
+  height: 60px;
+  font-size: 18px;
+  font-weight: 500;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #ffffff;
+  border: 2px solid #0077cc;
+  border-radius: 12px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
   cursor: pointer;
-  border-radius: 8px;
-  transition: 0.3s;
+  transition: all 0.3s ease;
+  text-align: center;
 }
-.grid button:hover {
-  background: #007bff;
-  color: white;
+
+.grid-box button:hover {
+  background-color: #e6f3ff;
+  border-color: #3399ff;
+  color: #0077cc;
 }
+
 .modal {
   position: fixed;
   top: 0; left: 0;
@@ -109,3 +120,5 @@ table th, table td {
 .modal-actions button:hover {
   background: #0056b3;
 }
+
+
