@@ -16,10 +16,13 @@
     <button onclick="viewResults()">📊 Xem kết quả</button>
 </nav>
 
-<section id="createOptions" class="hidden">
-    <h2>Tạo đề</h2>
+<section id="createOptions" class="grid-section">
+  <h2>Tạo đề</h2>
+  <div class="grid-box">
     <button onclick="showRandomForm()">🔀 Tạo đề ngẫu nhiên</button>
     <button onclick="showCustomForm()">✏️ Tạo đề thủ công</button>
+  </div>
+</section>
 
     <!-- Form tạo đề ngẫu nhiên -->
     <div id="randomForm" class="hidden form-box">
@@ -68,20 +71,22 @@
 </section>
 
 <section id="subjectList" class="hidden">
-    <h2>Chọn môn để làm bài</h2>
-    <div id="subjects"></div>
+  <h2>🧠 Chọn môn để tạo đề </h2>
+  <div id="subjects" class="grid-box"></div>
 </section>
 
 <section id="classList" class="hidden">
-    <h2>Chọn lớp</h2>
-    <div id="classes"></div>
+  <h2>🏫 Chọn lớp học</h2>
+  <div id="classes" class="grid-box"></div>
 </section>
 
 <section id="examList" class="hidden">
-    <h2>Chọn đề</h2>
-    <div id="exams"></div>
+  <h2>📝 Chọn đề</h2>
+  <div id="exams" class="grid-box"></div>
 </section>
+
 
 <script src="scriptgv.js"></script>
 </body>
 </html>
+
