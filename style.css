@@ -51,6 +51,7 @@ body{
 .hero-cta{ display:flex; gap:12px; margin-top:18px }
 
 .hero-right{ display:flex; align-items:center; justify-content:center }
+
 .mockup-card{
   width:420px;background:#11193d;border:1px solid rgba(255,255,255,.1);
   border-radius:16px; box-shadow:0 20px 60px rgba(0,0,0,.45); overflow:hidden
@@ -60,8 +61,23 @@ body{
 .mockup-body{ padding:16px 18px }
 .mockup-body .stat p{ font-size:40px; margin:0; color:#fff }
 .mockup-body .stat small{ color:#a7b1ff }
-.tiles{ display:grid; grid-template-columns:repeat(4,1fr); gap:10px; margin-top:16px }
-.tiles div{ padding-top:60%; border-radius:10px; background:linear-gradient(135deg,#8c94c8,#dbdce4) }
+.tiles {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  margin-top: 16px;
+}
+.tiles div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.tiles div img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 5px; /* Space between image and text */
+}
 
 .auth-area{
   display:grid; grid-template-columns: repeat(auto-fit,minmax(320px,1fr));
@@ -216,4 +232,42 @@ button{
 .results-table th{
   background:#f1f5ff;
   color:#0f172a;
+}
+.subject-cards {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  margin-top: 20px;
+}
+.cards {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  padding: 20px;
+  box-shadow: 0 8px 30px rgba(2, 7, 28, 0.06);
+  text-align: center;
+  width: 40%; /* Điều chỉnh để hai card chiếm không gian ngang nhau */
+  height: 50%;
+}
+.cards h2 {
+  margin: 0 0 10px;
+  color: var(--text);
+}
+.cards img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+.cards .btn-primary {
+  display: inline-block;
+  padding: 10px 20px;
+  background: var(--primary);
+  color: #fff;
+  border-radius: 999px;
+  font-weight: 600;
+  text-decoration: none;
+}
+.cards .btn-primary:hover {
+  filter: brightness(0.95);
 }
