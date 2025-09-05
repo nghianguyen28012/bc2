@@ -64,3 +64,4 @@ function showExams(subject, grade) {
 function viewResults() {
   alert("Chức năng xem kết quả đang được phát triển!");
 }
+
