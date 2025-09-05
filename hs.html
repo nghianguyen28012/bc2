@@ -4,40 +4,17 @@
   <meta charset="UTF-8">
   <title>Trang Học Sinh</title>
   <link rel="stylesheet" href="stylehs.css">
-  <style>
-    .hidden { display: none; }
-    .card-btn {
-      padding: 10px 20px;
-      margin: 5px;
-      font-size: 16px;
-      background: #007bff;
-      color: white;
-      border: none;
-      border-radius: 5px;
-      cursor: pointer;
-    }
-    .card-btn:hover { background: #0056b3; }
-    .card-section { margin-top: 20px; }
-  </style>
 </head>
 <body>
   <header>
-    <img src="logo.png" alt="Onluyen Logo" class="logo">
-    <nav>
-      <a href="#">Tin tức</a>
-      <a href="#">Kỳ thi</a>
-      <a href="#">Học phí</a>
-      <a href="#">Flashcard</a>
-      <a href="#">Tuyển dụng</a>
-    </nav>
+    <div class="brand">
+      <img src="images/home2.png" alt="logo">
+      <span>SHINICHI</span>
+    </div>
+    <h1>Chào mừng, <span id="studentName">Học sinh</span> 👋</h1>
   </header>
 
   <main class="dashboard">
-    <section class="welcome">
-      <h1>Chào mừng, <span id="studentName">Học sinh</span> 👋</h1>
-      <p>Hãy chọn một hành động bên dưới để bắt đầu học tập.</p>
-    </section>
-
     <section class="actions">
       <button class="action-btn" onclick="showSubjects()">📚 Làm bài trắc nghiệm</button>
       <button class="action-btn" onclick="viewResults()">📊 Xem kết quả</button>
@@ -175,8 +152,11 @@
     }
 
     function viewResults() {
-      window.location.href = "xemketqua.html";
+      window.location.href = "ketqua.html";
     }
   </script>
+  <script src="scripths.js"></script>
 </body>
 </html>
+
+
