@@ -21,42 +21,6 @@ function hideAllSections() {
   });
 }
 
-function showRandomForm() {
-  var dataFetch = {
-    mon: 1,
-    lop: 1
-  };
-
-  // Chuyển object sang dạng x-www-form-urlencoded
-  let formEncoded = new URLSearchParams();
-  for (let key in dataFetch) {
-    formEncoded.append(key, dataFetch[key]);
-  }
-
-  fetch("gvchoncautaodengaunhien.php", {
-    method: "POST",
-    headers: {
-      "Content-Type": "application/x-www-form-urlencoded" // báo cho server biết là form-encode
-    },
-    body: formEncoded.toString() // gửi dữ liệu encode
-  })
-    .then(res => res.json())
-    .then(data => {
-      console.log("Dữ liệu trả về:", data);
-      if (!data || !data.status) {
-        alert("Không tạo được đề ngẫu nhiên");
-        return;
-      } else {
-        alert("Tạo được đề ngẫu nhiên");
-        return;
-      }
-      // localStorage.setItem("deThi", JSON.stringify(data));
-      // window.location.href = "lb.html";
-    })
-    .catch(err => console.error("Lỗi fetch:", err));
-}
-
-
 function showCreateOptions() {
   hideAllSections();
   document.getElementById("createOptions").classList.remove("hidden");
@@ -249,3 +213,4 @@ function saveCustomExam() {
       if (data.status === 'success') closeModal();
     });
 }
+
